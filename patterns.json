@@ -10,7 +10,8 @@
         System.out.println();
     }
 }
-2)inverted
+2)
+inverted
 class HelloWorld {
     public static void main(String[] args) {
         int n=4;
@@ -23,7 +24,8 @@ class HelloWorld {
         System.out.println();
     }
 }
-3)reverse
+3)
+reverse
 class patterns {
     public static void main(String[] args) {
         int n=4;
@@ -39,7 +41,8 @@ class patterns {
         }
     }
 }
-4)number triangle pyramid
+4)
+number triangle pyramid
 class patterns {
     public static void main(String[] args) {
         int n=5;
@@ -59,7 +62,8 @@ output : 1
          4 5 6 
          7 8 9 10 
          11 12 13 14 15 
-5) class patterns {
+5) 
+class patterns {
     public static void main(String[] args) {
         int n=5;
         
@@ -86,7 +90,8 @@ OUTPUT ;
 1 0 1 
 0 1 0 1 
 1 0 1 0 1 
-6) class patterns {
+6) 
+class patterns {
     public static void main(String[] args) {
         int n=4;
         
@@ -108,3 +113,123 @@ output:
  ****
 ****
 7)
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int n=5;
+        int m=5;
+        for(int i=1; i<=n;i++){
+            for(int j=1;j<=m;j++){
+                if(i==1 || j==1||i==n || j==m){
+                   System.out.print("*"); 
+                }else{
+                    System.out.print(" ");
+                }
+                
+            }
+            System.out.println();
+        }
+        
+    }
+}
+output:
+*****
+*   *
+*   *
+*   *
+*****
+8)
+class HelloWorld {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1; i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                   System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                   System.out.print("* ");
+                }
+                
+            
+            System.out.println();
+        }
+        
+    }
+}
+output:
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+10)
+class HelloWorld {
+    public static void main(String[] args) {
+        int n=5;
+        for(int i=1; i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                   System.out.print(" ");
+            }
+            for(int j=i;j>=1;j--){
+                   System.out.print(j);
+            }
+            for(int j=2;j<=i;j++){
+                System.out.print(j);
+                }
+            
+                
+            
+            System.out.println();
+        }
+        
+    }
+}
+output ;
+    1
+   212
+  32123
+ 4321234
+543212345
+11)
+class HelloWorld {
+    public static void main(String[] args) {
+        int n = 5; // Number of rows
+        
+        // Upper part of the pyramid
+        for(int i = 1; i <= n; i++){
+            // Print spaces
+            for(int j = 1; j <= n - i; j++){
+                System.out.print(" ");
+            }
+            // Print stars
+            for(int j = 1; j <= 2 * i - 1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Lower part of the pyramid
+        for(int i = n - 1; i >= 1; i--){
+            // Print spaces
+            for(int j = 1; j <= n - i; j++){
+                System.out.print(" ");
+            }
+            // Print stars
+            for(int j = 1; j <= 2 * i - 1; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+output:
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+12)
